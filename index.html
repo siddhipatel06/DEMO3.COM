@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>B_Card</title>
+</head>
+
+<style>
+    .card {
+        position: relative;
+        height: 460px;
+        width: 300px;
+        background-color: #ffe1ec;
+        margin: 60px auto;
+    }
+
+    .header {
+        position: absolute;
+        height: 220px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-image:  url('i.jpg');
+    }
+
+    .header img {
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        left: 90px;
+        top: 100px;
+    }
+
+    .header h3 {
+        position: absolute;
+        font-family: sans-serif;
+        color: #8d1327;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        top: 0;
+        left: 80px;
+    }
+
+    .header p {
+        position: absolute;
+        font-family: sans-serif;
+        color: #8d1327;
+        font-size: 18px;
+        top: 50px;
+        left: 100px
+    }
+
+    .body {
+        position: absolute;
+        height: 160px;
+        left: 5px;
+        right: 5px;
+        top: 50%;
+        background-color: #fdc9dc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .body ul {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .body ul li {
+        position: absolute;
+        list-style: none;
+        display: block;
+        height: 40px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fad6d9;
+        transition: all .3s ease-in-out;
+    }
+
+    .body ul li p,
+    h3,
+    i {
+        position: absolute;
+    }
+
+    .body ul li h3 {
+        top: -17px;
+        left: 58px;
+        color: black;
+    }
+
+    .body ul li p {
+        top: 14px;
+        left: 59px;
+        font-size: 12px;
+        font-family: sans-serif;
+        color: #48525e;
+    }
+
+    .body ul li i {
+        left: 8px;
+        top: 7px;
+        color: #8d1327;
+        font-size: 26px;
+
+    }
+
+    .body ul li:nth-child(1) {
+        top: -16px;
+    }
+
+    .body ul li:nth-child(2) {
+        top: 26px;
+    }
+
+    .body ul li:nth-child(3) {
+        top: 68px;
+    }
+    .body ul li:nth-child(4) {
+        top: 110px;
+    }
+
+    .body ul li:nth-child(1) i {
+        left: 12px;
+    }
+
+    .body li:hover {
+        background-color: #fa6c84;
+        cursor: pointer;
+    }
+    /*footer*/
+
+    .footer {
+        position: absolute;
+        height: 60px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .footer ul {
+        position: absolute;
+        left: -50px;
+    }
+
+    .footer ul li {
+        display: inline-block;
+        margin-left: 60px;
+    }
+
+    .footer ul li i {
+        font-size: 30px;
+        color: #7f8c8d;
+        transition: all .3s ease-in;
+    }
+
+    .footer ul li:hover i {
+        transform: scale(0.9);
+        color: #c90c2b;
+        cursor: pointer;
+
+    }
+</style>
+
+<body>
+
+    <div class="card">
+        <div class="header">
+            <img src="g.jpg">
+            <h3>Siya Kapoor</h3>
+            <p>Interior Designer</p>
+        </div>
+
+        <div class="body">
+            <ul>
+                <li>
+                    <h3>+91-7567927551</h3>
+                    <p>Mobile number</p>
+                    <i class="fas fa-mobile-alt"></i>
+                </li>
+                <li>
+                    <h3>siyakps06@gmail.com</h3>
+                    <p>Email address</p>
+                    <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                    <h3>www.siyakps.com</h3>
+                    <p>Website address</p>
+                    <i class="fas fa-globe-americas"></i>
+                </li>
+                <li>
+                    <h3>13-Indraprasth,Mumbai</h3>
+                    <p>Location</p>
+                    <i class="fa fa-map-marker"></i>
+                  </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li>
+                    <i class="fab fa-facebook-f"></i>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fab fa-pinterest-p"></i>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
